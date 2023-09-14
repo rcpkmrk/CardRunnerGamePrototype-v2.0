@@ -113,7 +113,7 @@ public class Spawner : MonoBehaviour
         GameObject newCard = Instantiate(cardsToSpawn[0], cardSpawnPosition, cardsToSpawn[0].transform.rotation);
         StartCoroutine(MoveCard(newCard));
     }
-    IEnumerator MoveCard(GameObject card) // leps cards to the destination
+    IEnumerator MoveCard(GameObject card) // lerps cards to the destination
     {
         float startTime = Time.time;
         float journeyLength = Vector3.Distance(cardSpawnPosition, destination);
